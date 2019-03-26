@@ -10,6 +10,9 @@ body {
 .center {
   text-align: center;
 }
+p {
+  font-family: Merriweather, sans-serif;
+}
 .heading {
   font-size: 90px;
   margin: 121.5px 0 37.5px;
@@ -33,13 +36,13 @@ body {
   line-height: 200%;
   margin-bottom: 60px; 
 }
-ul {
+.heading-list {
   margin-bottom: 30px;
 }
 ul>li {
   list-style: none;
 }
-li {
+.heading-list li {
   font-size: 13px;
   font-family: Merriweather, sans-serif;
   line-height: 190%;
@@ -81,12 +84,42 @@ hr {
 }
 .first-paragraph {
   font-size: 27px;
+  font-family: Merriweather, sans-serif;
+}
+.first-paragraph::first-letter {
+  font-size: 140px;
+  float: left;
+  padding: 0 8px 0 0;
+  line-height: 95px;
+  margin: 10px 5px 10px 0px;
+  font-family: serif;
 }
 .paragraph {
   font-size: 16px;
-} 
+  font-family: Merriweather, sans-serif;
+}
+.img-container {
+  width: fit-content;
+}
+.mapa {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+.nivel {
+  width: 40%;
+  height: 10%;
+  margin: auto;
+  margin-left: 10%;
+
+}
+.mapa-grande {
+  width: 40%;
+  margin-left: 5%;
+  margin-right:10%;
+}
 .hospital-info {
-  display: inline-block;
   margin: 40px 0;
 }
 .hospitales-chiapas {
@@ -111,15 +144,54 @@ hr {
   background-color: #580150;
   width: 100%;
   height: 70px;
+  position: relative;
 }
 .footer-text {
   padding: 20px;
   color: white;
   font-family: Roboto, sans-serif;
+  width: 30%;
 }
-.devf {
-  float: right;
-  width: 40px;
+.icons-footer {
+  position: absolute;
+  bottom: 5px;
+  right: 6%;
+}
+.icons-style {
+  display: flex;
+  margin: 0;
+  height: fit-content;
+}
+a {
+  text-decoration: none;
+}
+.icons-style li {
+  margin-right: 9%;
+}
+.icons-style li a{
+  color: white;
+  font-size: 40px;
+}
+.icons-style li a:hover {
+  color: #BD9BC0;
+  font-size: 40px;
+  margin-right: 9%;
+}
+li .devf {
+  background-image: url('./images/devf.png');
+  display: block;
+  background-size: 66px 35px;
+  background-repeat: no-repeat !important;
+  width: 66px;
   height: 40px;
-  
+  margin: 0 5%;
+}
+li .devf:hover {
+  background-image: url('./images/devf_hover.png');
+  display: block;
+  background-size: 66px 35px;
+  background-repeat: no-repeat !important;
+  width: 66px;
+  height: 40px;
+  margin: 0 5%;
 }
