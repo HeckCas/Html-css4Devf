@@ -3,7 +3,7 @@
 body {
   margin: 0;
 }
-.header {
+.container {
   width: 70%;
   margin: auto;
 }
@@ -59,4 +59,67 @@ li span {
 hr {
   width: 60%;
   margin: auto;
+}
+.video-wrapper {
+  width: 100%;
+  height: auto;
+}
+.video {
+  width: 100%;
+  height: auto;
+}
+.youtube-video {
+  margin: 0%;
+  padding: 0;
+  width: 100%;
+  height: 600px;
+}
+.info {
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+}
+.first-paragraph {
+  font-size: 27px;
+}
+.paragraph {
+  font-size: 16px;
+} 
+.hospital-info {
+  display: inline-block;
+  margin: 40px 0;
+}
+.hospitales-chiapas {
+  margin-top: 5%;
+  width: 100px;
+  height: 100px;
+}
+.quote-wrapper {
+  display: block;
+}
+.quote-img {
+  width: 40px;
+  height: 30px;
+  float: left;
+  margin-right: 10px;
+}
+.quote {
+  font-size: 20px;
+  color: #7C7C7C;
+}
+.footer {
+  background-color: #580150;
+  width: 100%;
+  height: 70px;
+}
+.footer-text {
+  padding: 20px;
+  color: white;
+  font-family: Roboto, sans-serif;
+}
+.devf {
+  float: right;
+  width: 40px;
+  height: 40px;
+  
 }
