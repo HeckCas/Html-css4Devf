@@ -29,12 +29,12 @@
   </div> <!-- Aquí se cierra el Div con la clase container-->
   <!-- Separamos aquí de usar el container porque queremos que el video utilice todo el ancho de la pagina, y el container solo usa el 70% (Véase en Css)-->
   <div class="video-wrapper"> <!-- Div contenedor del video-->
-    <iframe class="youtube-video" src="https://www.youtube.com/embed/IkEgUF84g9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="container">
-    <section class="info">
-      <article>
-        <p class="first-paragraph">
+    <iframe class="youtube-video" src="https://www.youtube.com/embed/IkEgUF84g9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- Código de inserción que nos dio Youtube por defecto se le borraron el ancho y alto por defecto-->
+  </div> <!-- Se cierra la etiqueta de video -->
+  <div class="container"> <!-- Se usa de nuevo la clase container que delimita el ancho a 70%-->
+    <section class="info"> <!-- La etiqueta Section sirve de la misma manera que un Div sólo se usa para semántica osea importancia de la página cuando un navegador la lea-->
+      <article> <!-- La etiqueta Article se usa de misma menra por semántica, es muy comunmente usada en Sections-->
+        <p class="first-paragraph"><!-- La etiqueta P se utiliza a diferencia del span para agregar texto pero con salto de línea -->
           En enero de este año nació el primer hijo de la cantante Anahí y el gobernador de Chiapas, Manuel Velasco. En redes sociales, ambos celebraron haber tenido un niño sano. La diferencia con miles de chiapanecos que se convierten en padres es que ellos pudieron decidir en dónde querían que naciera su hijo: el hospital privado San Lucas, en la capital Tuxtla Gutiérrez.
         </p>
         <p class="paragraph">
@@ -47,20 +47,20 @@
           “Si entra una paciente pues ya la paciente sale así de inmediato y entraría otra paciente y otra paciente para que se haga el trabajo de parto”, relata un estudiante de medicina que realiza prácticas en el Hospital de la Mujer de San Cristóbal de las Casas, en donde nacen la mayoría de los hijos de las mujeres indígenas de los Altos de Chiapas que no pudieron parir en casa.
         </p>
         <div class="hospital-info">
-          <img src="./images/hospitales_cerrados.png"/>
-          <img class="hospitales-chiapas" src="./images/hosp_chiapas.png"/>
+          <img src="./images/hospitales_cerrados.png"/><!-- Tarea Ponerle alt-->
+          <img class="hospitales-chiapas" src="./images/hosp_chiapas.png"/><!-- Igual aquí ponerle alt a la img-->
         </div>
-        <quote who="'Doctora del hospital en Yajalón:'" quote="'El hospital está saturado, en ginecología vemos una paciente tras otra, no hay espacio libre.'">
-          <p>Doctora del hospital en Yajalón:</p>
+        <quote who="'Doctora del hospital en Yajalón:'" quote="'El hospital está saturado, en ginecología vemos una paciente tras otra, no hay espacio libre.'"> <!-- Etiqueta Quote especialmente para citas  y tiene atributos de who y quote para que el navegador lo pueda leer y nos dee mejor posicion en resultados -->
+          <p>Doctora del hospital en Yajalón:</p> <!-- Pero nosotros debemos poner el texto en el navegador si no no se vería -->
           <div class="quote-wrapper">
-            <img class="quote-img" src="./images/comillas.png">
-            <p class="quote">El hospital está saturado, en ginecología vemos una paciente tras otra, no hay espacio libre.</p>
+            <img class="quote-img" src="./images/comillas.png"> <!-- Tarea ponerle alt -->
+            <p class="quote">El hospital está saturado, en ginecología vemos una paciente tras otra, no hay espacio libre.</p> <!-- Tambn aquí poner el texto de la quote para que lo lea el navegador -->
           </div>
         </quote>
         <quote who="Amelia, tuvo 11 hijos, todos en su casa" quote="'Todavía a las mujeres que necesitan cesárea o tienen complicaciones de parto las mandan a Villahermosa, eso le pasó a una vecina. Dicen que el mes pasado una mujer parió en el baño de la sala de espera de este hospital (el viejo hospital de Yajalón)'">
           <p>Amelia, tuvo 11 hijos, todos en su casa</p>
           <div class="quote-wrapper">
-            <img class="quote-img" src="./images/comillas.png">
+            <img class="quote-img" src="./images/comillas.png"> <!-- Tarea ponerle alt -->
             <p class="quote">Todavía a las mujeres que necesitan cesárea o tienen complicaciones de parto las mandan a Villahermosa, eso le pasó a una vecina. Dicen que el mes pasado una mujer parió en el baño de la sala de espera de este hospital (el viejo hospital de Yajalón)</p>
           </div>
         </quote>
@@ -71,11 +71,11 @@
       <img class="nivel" src="./images/nivel.png" alt="nivel en el mapa"/>
       <img class="mapa-grande" src="./images/mapa_grande.png" alt="nivel en el mapa"/>
   </div>
-  <a href="#start" class="container center back-start">
-      <i class="far fa-arrow-alt-circle-up"></i>
+  <a href="#start" class="container center back-start"> <!-- Una etiqueta a significa Anchor y es para poder usar links siempre debe de llevar su atributo href que define el link o en este caso pasandole el id #start nos llevara al elemento que tenga ese id dentro de la misma página -->
+      <i class="far fa-arrow-alt-circle-up"></i> <!-- etiqueta i comunmente usada para íconos y la clase la agrega font-awesome, que es la página de donde estámos sacando los iconos -->
       <p>Volver al Inicio</p>
   </a>
-  <footer class="footer">
+  <footer class="footer"> <!-- La etiqueta Footer indica que hay un pie de página y adentor puede haber elementos -->
     <div class="footer-text">
       Hecho con Amor por el grupo de DataViz 📊 ❣️ 
     </div>
