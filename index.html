@@ -1,36 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="keywords" content="HTML, CSS">
-  <meta name="description" content="Salud en Chiapas Infografía">
-  <meta name="author" content="Ivan Castelán">
-  <title>Salud en Chiapas</title>
-  <link rel="stylesheet" href="index.css" type="text/css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<!DOCTYPE html> <!-- Etiqueta que le dice al navegador que estamos escribiendo HTML5-->
+<html> <!-- Etiqueta que empieza el  documento HTML hasta abajo está su cierre --> 
+<head> <!-- Primer hijo de html  donde van, las etiquetas necesarias para que el navegador posicione nuestra página y tmbn para que pueda funcionar bien-->
+  <meta charset="UTF-8"> <!-- Ésta etiqueta se usa para poder utilizar caracteres especiales y Emojis-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Se usa para poder hacer responsive design en nuestro sitio-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"><!-- PAra que nuestra semantica y estilos se puedan leer en Internet Explorer-->
+  <meta name="keywords" content="HTML, CSS"><!-- Para que el navegador indexe nuestra pag en mejor posición-->
+  <meta name="description" content="Salud en Chiapas Infografía"> <!-- lo mismo de la indexación y para que eñ navegador-->
+  <meta name="author" content="Ivan Castelán"> <!-- Igual sirve para el indexado y el navegador reconoce quien hizo la página-->
+  <title>Salud en Chiapas</title> <!-- Es el título de la página -->
+  <link rel="stylesheet" href="index.css" type="text/css"> <!-- Mandar a llamar al CSS que se va a usar -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> <!--Aquí mandas a llamar el CDN  -->
 </head>
-<body id="start">
-  <div class="container">
-      <div class="header center">
-        <h1 class="heading">Salud en Chiapas: </h1>
-        <h2 class="subheading">la maternidad, sólo un privilegio</h2>
-        <h3 class="heading-info">Chiapas es el estado con la mayor mortalidad materna en el país. Tan solo en lo que va del año han muerto 34 mujeres por esta causa, más del 10% del total nacional.</h3>
-        <ul class="heading-list">
-          <li>Grupo de Información en Reproducción Elegida, GIRE</li>
-          <li>Autor: <span>Margarita Vega</span></li>
-          <li>Video: <span>Tres Gatos Films</span></li>
-          <li>Visualización de datos: <span>DATA4</span></li>
-        </ul>
-          <img class="mouse" src="./images/mouse.gif"/>
-          <hr>
-      </div>
-  </div>
-  <div class="video-wrapper">
-    <div>
-      <iframe class="youtube-video" src="https://www.youtube.com/embed/IkEgUF84g9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+<body id="start"> <!-- Aquí empezamos a escribir lo que se va a ver en la página, le pusimos un id porque va a ser el de referencia para la Parte de volver a Inicio-->
+  <div class="container"> <!-- Div con la class container para que nuestros Elementos estén agrupados dentro de ese div -->
+      <div class="header center"> <!-- Div con la clase Center y header -->
+        <h1 class="heading">Salud en Chiapas: </h1> <!-- H1 es nuestro título principal y no puede faltar en nuestra página-->
+        <h2 class="subheading">la maternidad, sólo un privilegio</h2> <!-- H2 es el título que sigue, deben de ir en orden no podemos pasar de un H1 a un H3, nos cataloga mal el navegador-->
+        <h3 class="heading-info">Chiapas es el estado con la mayor mortalidad materna en el país. Tan solo en lo que va del año han muerto 34 mujeres por esta causa, más del 10% del total nacional.</h3> <!-- H3, el título que sigue-->
+        <ul class="heading-list"> <!-- ul significa que vmaos a utilizar una lista desordenada (unordered list) y adento van sus elementos-->
+          <li>Grupo de Información en Reproducción Elegida, GIRE</li> <!-- Primer elemento de la lista, Los li se usan como elementos de lista tanto para Ul, como para Ol (Ordered List )-->
+          <li>Autor: <span>Margarita Vega</span></li> <!-- Segundo Elemento de la lista pusimos un Span porque vamos a hacer una selección del elemento dentro de un elemento (osea eso se ve en CSS) [ Un span es una etiqueta que permite agregar texto dentro de la misma linea] -->
+          <li>Video: <span>Tres Gatos Films</span></li> <!-- Tercer Elemento de la Lista, hicimos lo mismo del span -->
+          <li>Visualización de datos: <span>DATA4</span></li> <!-- Cuarto elemento de la lista, lo mismo del span -->
+        </ul> <!-- Aquí acaba la lista -->
+          <img class="mouse" src="./images/mouse.gif"/> <!-- La etiqueta img necesita siempre su atributo src="ruta_de_imagen" y por buena práctica se necesita poner un atributo alt="de_que_se_trata_la_imagen" y además es una Self-Closing Tag que no nocesita su etiqueta de cierre -->
+          <hr> <!-- Ésta etiqueta no necesita ciere, y se utiliza para poner una linea horizontal-->
+      </div> <!-- Aqui se cierra el Div con las clases header y center-->
+  </div> <!-- Aquí se cierra el Div con la clase container-->
+  <!-- Separamos aquí de usar el container porque queremos que el video utilice todo el ancho de la pagina, y el container solo usa el 70% (Véase en Css)-->
+  <div class="video-wrapper"> <!-- Div contenedor del video-->
+    <iframe class="youtube-video" src="https://www.youtube.com/embed/IkEgUF84g9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div class="container">
     <section class="info">
