@@ -195,3 +195,15 @@ li .devf:hover {
   height: 40px;
   margin: 0 5%;
 }
+.back-start {
+  display: flex;
+  flex-direction: column;
+}
+.back-start > i {
+  font-size: 30px;
+  color: #BD9BC0;
+}
+.back-start > p {
+  margin-bottom: 1.2%;
+  color: #BD9BC0;
+}
