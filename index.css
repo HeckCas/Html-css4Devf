@@ -1,48 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300'); /* Ésta es una manera de Descargar Fonts y poderlas usar en la página */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-body {
-  margin: 0;
+body { /* Selector de elemento, sólo basta con escribir la etiqueta html para referirse al elemento y modificar sus estilos*/
+  margin: 0; /* Los margins son para dar espaciado afuera del elemento, es decir un espaciado externo, al ponerlo en 0 significa que no haga espaciado externo a ese elemento*/
 }
-.container {
-  width: 70%;
-  margin: auto;
+.container { /* Selector de clase, aquí llamamos a la clase container [class="container"] en el HTML y los selectores de clase empiezan con "." un punto */
+  width: 70%; /* El uso de porcentajes se refiere aquí a que solo agarre el ancho de 70% respecto a su lemento anterior, en este caso body, nos dará el ancho del 70% de la pantalla*/
+  margin: auto; /* Nos sirve para centar, auto agarra el espacio disponible ya sea vertical u horizontal */
 }
 .center {
-  text-align: center;
+  text-align: center; /* Centra texto o elementos*/
 }
 p {
-  font-family: Merriweather, sans-serif;
+  font-family: Merriweather, sans-serif; /* Nos permite utilizar distintos tipos de fuente */
 }
 .heading {
-  font-size: 90px;
-  margin: 121.5px 0 37.5px;
-  font-weight: 100;
+  font-size: 90px; /* Nos permite cambiar el tamaño de la fuente, se pueden usar px, rem o em*/
+  margin: 121.5px 0 37.5px; /*Ésta notación para margin se refiere a [arriba derecha abajo izquierda],  los espaciados externos respectivos para cada lado */
+  font-weight: 100; /* Se refiere a cuanto Bold quieres para la fuente, los valores comprenden desde 100 a 900, o valores de bold, italic, etc*/
   font-family: Merriweather, serif;
-  line-height: 100%;
+  line-height: 100%;/* Espaciado entre líneas */
 }
 .subheading {
-  font-size: 46px;
+  font-size: 46px; 
   font-weight: lighter;
   font-family: Merriweather, serif;
-  margin-bottom: 50px; 
+  margin-bottom: 50px; /* Ésta propiedad indica que sólo vamos a querer un espaciado exterior en la parte de ABAJO para ese elemento */
 }
 .heading-info {
   margin: auto;
   font-size: 20px;
   font-weight: 100;
   font-family: Roboto, sans-serif;
-  color: #7C7C7C;
-  width: 60%;
+  color: #7C7C7C; /* La propiedad color sirve para cambiar color a TEXTO, para fondo y bordes, existen otras propiedades */
+  width: 60%; /* Define el ancho de éste elemento a un 60% */
   line-height: 200%;
   margin-bottom: 60px; 
 }
 .heading-list {
   margin-bottom: 30px;
 }
-ul>li {
-  list-style: none;
+ul>li { /*Selectores de Hijo, aquí quiere decir que elige el hijo directo del elemento padre*/
+  list-style: none; /* Quita la forma de la lista, osea si es ul, nos quita los bullets, y si es ol nos quita los numeros*/
 }
-.heading-list li {
+.heading-list li { /* Selectores descendientes, los elementos que descienden del otro por ejemplo aquí li desciende de el elemento con la clase .heading-list*/
   font-size: 13px;
   font-family: Merriweather, sans-serif;
   line-height: 190%;
@@ -56,7 +56,7 @@ li span {
 }
 .mouse {
   width: 30px;
-  height: 95px;
+  height: 95px; /* Sirve para darle altura a un elemento, el contrario de width */
   margin-bottom: 30px;
 }
 hr {
@@ -65,7 +65,7 @@ hr {
 }
 .video-wrapper {
   width: 100%;
-  height: auto;
+  height: auto; /* Aquí el auto le dice al height que se ajuste automaticamente al tamaño de su contenido y de sus espaciadores (padding y margin)*/
 }
 .video {
   width: 100%;
@@ -73,14 +73,14 @@ hr {
 }
 .youtube-video {
   margin: 0%;
-  padding: 0;
+  padding: 0; /* La propiedad padding sirve para dar espaciados pero internos al contario de margin que son externos, aquí al ponerle 0, queremos decirle que no nos de espacios internos*/
   width: 100%;
   height: 600px;
 }
 .info {
   width: 60%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 50px; /* Aquí decimos que queremos un espaciado externo únicamente para la parte de arriba del elemento, normalmente se usa para espaciar elementos*/
 }
 .first-paragraph {
   font-size: 27px;
@@ -88,8 +88,8 @@ hr {
 }
 .first-paragraph::first-letter {
   font-size: 140px;
-  float: left;
-  padding: 0 8px 0 0;
+  float: left; /* Float quiere decir que queremos que éste elemento nos lo posicione en la izq de su elemento padre, que nos lo aviente a la izq como se dice en Mex*/
+  padding: 0 8px 0 0; /* Al igual que en margin ésta notación quiere decir [arriba derecha abajo izquierda]*/
   line-height: 95px;
   margin: 10px 5px 10px 0px;
   font-family: serif;
@@ -99,28 +99,28 @@ hr {
   font-family: Merriweather, sans-serif;
 }
 .img-container {
-  width: fit-content;
+  width: fit-content; /* aquí a diferencia del auto, fit-content sirve para que el ancho en éste caso solo se defina por sus elementos internos*/
 }
 .mapa {
   width: 100%;
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 5%;
+  display: flex; /* Display Flex, es un poco avanzado, sirve para posicionar las cosas,(Véase apartado de hasta abajo, para aprender más de flex)*/
+  margin: 0 auto; /* Margin 0 auto, así en esa notación sirve para centrar tanto vertical como horizontal respecto al tamaño del elemento padre*/
+  margin-bottom: 5%; 
 }
 .nivel {
   width: 40%;
   height: 10%;
   margin: auto;
-  margin-left: 10%;
+  margin-left: 10%; /*Aquí decimos que queremos un espaciado externo únicamente en la aprte izquierda*/
 
 }
 .mapa-grande {
   width: 40%;
   margin-left: 5%;
-  margin-right:10%;
+  margin-right:10%; /*Aquí decimos que queremos un espaciado externo únicamente en la aprte derecha*/
 }
 .hospital-info {
-  margin: 40px 0;
+  margin: 40px 0; /*Ésta notación sirve tanto para margin y padding y significa [arribaYabajo DerechaEizquierda]*/
 }
 .hospitales-chiapas {
   margin-top: 5%;
@@ -128,7 +128,7 @@ hr {
   height: 100px;
 }
 .quote-wrapper {
-  display: block;
+  display: block; /* Sirve para posicionar los elementos, todo lo toma como una cajita y trata de tomar todo el ancho disponible */
 }
 .quote-img {
   width: 40px;
@@ -141,21 +141,21 @@ hr {
   color: #7C7C7C;
 }
 .footer {
-  background-color: #580150;
+  background-color: #580150; /* Nos sirve para dar color de FONDO a un elemento*/
   width: 100%;
   height: 70px;
-  position: relative;
+  position: relative; /* Es un posicionamento  un poquito más avanzado lo que hace aquí es que este elemento lo hace fijo y relativo a otros elementos que se quieran mover en torno a él */
 }
 .footer-text {
-  padding: 20px;
+  padding: 20px; /* Ésta notación sirve tanto para margin y padding y significa que quiere ese valor para espaciado INTERNO en todos los lados del elemento */
   color: white;
   font-family: Roboto, sans-serif;
   width: 30%;
 }
 .icons-footer {
-  position: absolute;
-  bottom: 5px;
-  right: 6%;
+  position: absolute; /* Es posicionamiento tmbn poquito avanzado como relative, y éste absolute es el complemento de relative sirve para mover elementos respectivamente al elemento relative más cercano y si no hay ninguno se va  hasta <body> Sus propiedades son bottom, top, left, right*/
+  bottom: 5px; /*Valor del elemento que tiene el absolute, desde hasta abajo va a moverse */
+  right: 6%; /*Valor del elemento que tiene el absolute, desde hasta la derecha va a moverse */
 }
 .icons-style {
   display: flex;
@@ -163,7 +163,7 @@ hr {
   height: fit-content;
 }
 a {
-  text-decoration: none;
+  text-decoration: none; /* lo que hace esta propiedad es quitar el estilo horrible que se crea con el elemento anchor*/
 }
 .icons-style li {
   margin-right: 9%;
@@ -178,12 +178,12 @@ a {
   margin-right: 9%;
 }
 li .devf {
-  background-image: url('./images/devf.png');
+  background-image: url('./images/devf.png'); /* Sirve para cuando quieres utilizar una imagen de fondo debes utilizar su valor de Url('aqui entres estos parentesis la ruta de la imagen')*/
   display: block;
-  background-size: 66px 35px;
-  background-repeat: no-repeat !important;
-  width: 66px;
-  height: 40px;
+  background-size: 66px 35px; /* Aquí definimos el tamaño de el background*/
+  background-repeat: no-repeat !important; /* Aquí lo usamos para que se pinte la img una sóla vez y no se repita ni a lo ancho ni a lo alto*/ 
+  width: 66px; /*Aqui el ancho del elemento*/
+  height: 40px; /* Aquí el alto del elemento */ /* Deben ser mayores o iguales los valores del contenedor que el del background, si no se vería cortado el backgrpund o sea la img*/
   margin: 0 5%;
 }
 li .devf:hover {
@@ -197,7 +197,7 @@ li .devf:hover {
 }
 .back-start {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Cambia la posición de elementos si estaban horizontales a verticales */
 }
 .back-start > i {
   font-size: 30px;
